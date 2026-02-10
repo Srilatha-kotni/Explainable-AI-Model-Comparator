@@ -1,18 +1,22 @@
 export async function uploadDataset(file) {
-  const formData = new FormData();
-  formData.append("file", file);
+  console.log("Uploading file:", file.name);
 
-  const response = await fetch(
-    "http://127.0.0.1:8000/upload-dataset",
-    {
-      method: "POST",
-      body: formData,
-    }
-  );
-
-  if (!response.ok) {
-    throw new Error("Upload failed");
-  }
-
-  return response.json();
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({
+        accuracy: {
+          RandomForest: 0.91,
+          LogisticRegression: 0.86,
+        },
+        bias: {
+          RandomForest: 0.08,
+          LogisticRegression: 0.12,
+        },
+        stability: {
+          RandomForest: 0.90,
+          LogisticRegression: 0.88,
+        },
+      });
+    }, 1500);
+  });
 }

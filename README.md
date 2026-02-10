@@ -5,12 +5,12 @@ Most ML projects train a single model and stop there.
 This project focuses on trust-aware model evaluation.
 
 This project provides an Explainable AI platform where users can:
-  Upload their own dataset (CSV)
-  Automatically train multiple ML models
-  Compare models using transparent evaluation metrics
-  Receive a model recommendation based on their priorities
+🚀 Features
 
-🌐 Full-Stack Implementation
+📂 Upload any CSV dataset
+🎯 Choose priority: Accuracy, Fairness, or Stability
+📊 Visual comparison using animated progress bars
+🤖 Explainable model recommendation
 
 FastAPI backend
 React + Tailwind frontend
